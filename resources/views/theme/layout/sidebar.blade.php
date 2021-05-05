@@ -22,7 +22,7 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item">
-    <a class="nav-link collapsed" href="/dashboard/">
+    <a class="nav-link collapsed" href="/web/posapps/dashboard">
         <i class="fas fa-tachometer-alt"></i>
         <span>Dashboard</span>
     </a>
@@ -38,10 +38,10 @@
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Actions</h6>
-            <a class="collapse-item" href="buttons.html">Item List</a>
-            <a class="collapse-item" href="buttons.html">Create Item</a>
-            <a class="collapse-item" href="cards.html">Bulk Insert</a>
-            <a class="collapse-item" href="cards.html">Download Items</a>
+            <a class="collapse-item" href="/web/posapps/item">Item List</a>
+            <a class="collapse-item" href="/web/posapps/item/page-create">Create Item</a>
+            <a class="collapse-item" href="/web/posapps/item/page-bulk">Bulk Insert</a>
+            <a class="collapse-item" href="/web/posapps/item/page-download">Download Items</a>
         </div>
     </div>
 </li>

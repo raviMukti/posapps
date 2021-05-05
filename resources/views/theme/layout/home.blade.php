@@ -40,8 +40,10 @@
                 {{-- Top Bar --}}
                 @include('theme.component.topbar')
 
-                {{-- Content --}}
-                @yield('content')
+                <div class="container-fluid">
+                    {{-- Content --}}
+                    @yield('content')
+                </div>
 
             </div>
             <!-- End of Main Content -->

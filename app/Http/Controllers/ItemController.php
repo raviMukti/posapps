@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class ItemController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a list of item
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return view("theme.page.item.item-list");
     }
 
     /**
@@ -23,7 +24,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        return view("theme.page.item.create-item");
     }
 
     /**
@@ -81,4 +82,24 @@ class ItemController extends Controller
     {
         //
     }
-}
+
+    /**
+     * Show Page For Bulk Insert Via CSV
+     * @return Response
+     */
+    public function showBulk()
+    {
+        return view("theme.page.item.bulk-item");
+    }
+
+
+    /**
+     * Show Download Page
+     * @return Response
+     */
+    public function showDownload()
+    {
+        return view("theme.page.item.download-item");
+    }
+
+} // end of controller
