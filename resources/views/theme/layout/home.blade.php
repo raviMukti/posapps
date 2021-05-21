@@ -20,6 +20,8 @@
     <!-- Custom styles for this template-->
     <link href="{!! asset('theme/css/sb-admin-2.min.css') !!}" rel="stylesheet">
 
+    @yield('css_after')
+
 </head>
 
 <body id="page-top">
@@ -40,8 +42,10 @@
                 {{-- Top Bar --}}
                 @include('theme.component.topbar')
 
-                {{-- Content --}}
-                @yield('content')
+                <div class="container-fluid">
+                    {{-- Content --}}
+                    @yield('content')
+                </div>
 
             </div>
             <!-- End of Main Content -->
@@ -61,7 +65,7 @@
     </a>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="{!! asset('theme/vendor/jquery/jquery.min.js') !!}"></script>
+    <script src="{!! asset('js/app.js') !!}"></script>
     <script src="{!! asset('theme/vendor/bootstrap/js/bootstrap.bundle.min.js') !!}"></script>
 
     <!-- Core plugin JavaScript-->
@@ -71,12 +75,7 @@
     <script src="{!! asset('theme/js/sb-admin-2.min.js') !!}"></script>
 
     <!-- Page level plugins -->
-    <script src="{!! asset('theme/vendor/chart.js/Chart.min.js') !!}"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="{!! asset('theme/js/demo/chart-area-demo.js') !!}"></script>
-    <script src="{!! asset('theme/js/demo/chart-pie-demo.js') !!}"></script>
-
+    @yield('js_after')
 </body>
 
 </html>
