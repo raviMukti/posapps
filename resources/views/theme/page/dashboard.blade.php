@@ -1,5 +1,10 @@
 @extends('theme.layout.home')
 
+@section('css_after')
+    <!-- Custom styles for this page -->
+    <link href="{!! asset('theme/vendor/datatables/dataTables.bootstrap4.min.css') !!}" rel="stylesheet">
+@endsection
+
 @section('content')
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -218,4 +223,20 @@
             </div>
         </div>
     </div>
+
+@endsection
+
+@section('js_after')
+    <script src="{!! asset('theme/vendor/chart.js/Chart.min.js') !!}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{!! asset('theme/js/demo/chart-area-demo.js') !!}"></script>
+    <script src="{!! asset('theme/js/demo/chart-pie-demo.js') !!}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{!! asset('theme/vendor/datatables/jquery.dataTables.min.js') !!}"></script>
+    <script src="{!! asset('theme/vendor/datatables/dataTables.bootstrap4.min.js') !!}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{!! asset('theme/js/demo/datatables-demo.js') !!}"></script>
 @endsection

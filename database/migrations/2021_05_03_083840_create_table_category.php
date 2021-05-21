@@ -16,6 +16,7 @@ class CreateTableCategory extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id('category_id')->autoIncrement();
             $table->string('category_name', 100)->nullable(false);
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }

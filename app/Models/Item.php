@@ -6,9 +6,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 
+/**
+ * @mixin Eloquent
+ */
 class Item extends Model
 {
     use HasFactory, Notifiable;
+
+    protected $primaryKey = 'item_id';
 
     /**
      * Attributes yang bisa diisi nilainya
@@ -22,21 +27,8 @@ class Item extends Model
         'sku',
         'barcode',
         'price',
-        'item_image',
-        'created_by',
-        'updated_by'
+        'item_image'
     ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'created_at' => 'datetime',
-        'updated_at' => 'datetime',
-    ];
-
 
     public function category()
     {

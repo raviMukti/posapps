@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fa fa-shopping-bag" aria-hidden="true"></i>
     </div>
@@ -28,6 +28,24 @@
     </a>
 </li>
 
+    <!-- Nav Item - Item -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseZero"
+           aria-expanded="true" aria-controls="collapseZero">
+            <i class="fas fa-layer-group"></i>
+            <span>Categories</span>
+        </a>
+        <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Actions</h6>
+                <a class="collapse-item" href="/web/posapps/category/list">Category List</a>
+                <a class="collapse-item" href="/web/posapps/category/page-create">Create Category</a>
+                <a class="collapse-item" href="/web/posapps/category/page-bulk">Bulk Insert</a>
+                <a class="collapse-item" href="/web/posapps/category/page-download">Download Categories</a>
+            </div>
+        </div>
+    </li>
+
 <!-- Nav Item - Item -->
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
@@ -38,7 +56,7 @@
     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Actions</h6>
-            <a class="collapse-item" href="/web/posapps/item">Item List</a>
+            <a class="collapse-item" href="/web/posapps/item/list">Item List</a>
             <a class="collapse-item" href="/web/posapps/item/page-create">Create Item</a>
             <a class="collapse-item" href="/web/posapps/item/page-bulk">Bulk Insert</a>
             <a class="collapse-item" href="/web/posapps/item/page-download">Download Items</a>

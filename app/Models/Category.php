@@ -11,10 +11,9 @@ class Category extends Model
     use HasFactory, Notifiable;
 
     protected $fillable = [
-        'category_id',
-        'category_name'
+        'category_name', 'active',
     ];
-    
+
     public function items()
     {
         return $this->hasMany(Item::class);

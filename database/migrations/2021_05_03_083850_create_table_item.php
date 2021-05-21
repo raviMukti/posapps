@@ -30,9 +30,9 @@ class CreateTableItem extends Migration
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('created_by');
             $table->unsignedBigInteger('updated_by');
-            $table->foreign('category_id')->references('category_id')->on('categories');
-            $table->foreign('created_by')->references('id')->on('users');
-            $table->foreign('updated_by')->references('id')->on('users');
+            $table->foreign('category_id')->references('category_id')->on('categories')->cascadeOnDelete();
+            $table->foreign('created_by')->references('id')->on('users')->cascadeOnDelete();
+            $table->foreign('updated_by')->references('id')->on('users')->cascadeOnDelete();
         });
     }
 
